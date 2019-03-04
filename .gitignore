@@ -1,3 +1,4 @@
 smile_predictor_basic.ipynb
-data/
+data/SMILEsmileD
+data/test1.mp4
 model/smiles_lenet.hdf5
