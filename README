@@ -1,0 +1,13 @@
+SMILE DETECTOR
+
+Using CNN (LeNet5) and Haar cascade face detector to detect a face and classify as "smiling" or "not smiling" from a real-time input video stream
+
+Consists of two parts
+1. train_model.py - Trains LeNet5 architecture using data augmentation on SMILES dataset which is saved in "data/SMILEsmileD/" downloaded from https://github.com/hromi/SMILEsmileD. The model weights are stored in model/smiles_lenet_epochs20.hdf5
+
+2. detect_smile.py - Takes in the input video stream from "data/" or webcam feed. Extracts face ROI using Haar cascade using OpenCV's implementation in "data/haarcascade_frontalface_default.xml". These ROI's are passed to the CNN which predicts smile or no smile. 
+
+smile_predictor_augmented.ipynb shows the inputs and outputs for reference
+
+Credits: Adrian Rosebrock https://www.pyimagesearch.com/2017/04/10/detect-eyes-nose-lips-jaw-dlib-opencv-python/
+
